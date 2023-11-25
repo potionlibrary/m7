@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <title>Juan Wagner</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="images/b_knight.png">
+</head>
+
+<body>
+    <header>
+
+        <h1 style="display: inline;">Juan Wagner <img src="images/g_potion.png" alt="green potion" width="50"
+                height="50" style="display: inline;"> </h1>
+
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+   </nav>
+
+    <section>
+        <h2>Order Page</h2> <!-- Page name -->
+
+        <article>
+            <p>Welcome to our order page. Here, you can select products and place your order.</p>
+
+            <!-- Order Form -->
+            <form action="/submit_order" method="POST">
+                <!-- Fieldset for personal information -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <label for="fullName">Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Your Name" autofocus required><br><br>
+                
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Your Email" required><br><br>
+                
+                    <!-- Address field remains the same as in the previous example -->
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" placeholder="Your Address" required></textarea><br><br>
+
+                </fieldset>
+
+                <!-- Fieldset for product selection -->
+                <fieldset>
+                    <legend>Product Selection</legend>
+                    <table>
+                        <caption>Available Products</caption>
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Manually construct rows with radio buttons -->
+                            <tr>
+                                <td>AGYM</td>
+                                <td>Spinning Cat Scratcher Ball</td>
+                                <td>$52.99</td>
+                                <td><input type="radio" id="product" name="product" value="Spinning Cat Scratcher Ball"></td>
+                            </tr>
+                            <tr>
+                                <td>Jasonwell</td>
+                                <td>Foldable Dog Pool</td>
+                                <td>$27.25</td>
+                                <td><input type="radio" id="product" name="product" value="Foldable Dog Pool"></td>
+                            </tr>
+                            <tr>
+                                <td>Expawlorer</td>
+                                <td>Dog Fence Window</td>
+                                <td>$30.05</td>
+                                <td><input type="radio" id="product" name="product" value="Dog Fence Window"></td>
+                            </tr>
+                            <tr>
+                                <td>Lollimeow</td>
+                                <td>Capsule Pet Travel Backpack</td>
+                                <td>$59.00</td>
+                                <td><input type="radio" id="product" name="product" value="Capsule Pet Travel Backpack"></td>
+                            </tr>
+                            <tr>
+                                <td>Drool\'d'</td>
+                                <td>Cat Hamster Wheel</td>
+                                <td>$349.75</td>
+                                <td><input type="radio" id="product" name="product" value="Cat Hamster Wheel"></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+
+                    <!-- Quantity input -->
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="Quantity" required><br><br>
+
+                    <!-- Delivery instructions textarea -->
+                    <label for="instructions">Delivery Instructions:</label>
+                    <textarea id="deliveryInstructions" name="deliveryInstructions" placeholder="Any special instructions for delivery"></textarea><br><br>
+                </fieldset>
+
+                <!-- Submit button -->
+                <button type="submit">Submit Order</button>
+            </form>
+        </article>
+    </section>
+</body>
+</html>

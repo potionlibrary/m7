@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset='utf-8'>
+     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <script src='main.js'></script>
+     <title>Juan Wagner</title>
+     <link rel="icon" type="image/png" sizes="192x192" href="images/b_knight.png">
+</head>
+
+<body>
+
+     <header>
+
+          <h1 style="display: inline;">Juan Wagner <img src="images/g_potion.png" alt="green potion" width="50"
+                    height="50" style="display: inline;"> </h1>
+
+
+     </header>
+
+     <nav>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="order.html">Order</a>
+          <a href="staff.html">Staff</a>
+     </nav>
+
+     <main>
+          <section>
+               <h2>Web Development Concepts</h2>
+
+               <nav class="local">
+                    <!-- Other navigation links -->
+                    <a href="#web">Web Servers</a>
+                    <a href="#Design">Fronted Design</a>
+                    <a href="#optimizing-images">Optimized Images</a>
+                    <a href="#favicons">Favicons</a>
+                    <a href="#cascading-stylesheets">CSS</a>
+                    <a href="#cascading-stylesheets">Cascading Stylesheets</a>
+                    <!-- Other navigation links -->
+               </nav>
+
+               <article id="web">
+                    <h3>About Web Servers</h3>
+
+                    <p>In the context of a web server, the index.html file acts as the starting point of a web session.
+                         This webpage provides users with a central hub from which they can navigate to various sections
+                         of the website.
+                         This convention simplifies the user experience by offering easy access to essential tabs like
+                         home, shop, learn, and support.</p>
+
+                    <p>The main difference between viewing from the web server and locally running index.html is the URL
+                         format. Web server URLs typically start with http:// or https://, while local URLs start
+                         with file://, this implies that there is a difference in protocols used to manipulate the
+                         content.
+                         In the browser's Network tab, you can see details regarding the user's session, when running
+                         the file locally these trails are absent unless the user has configured their own local web
+                         server to serve the files.</p>
+
+                    <p>The files main.css, main.js, and favico.ico can be considered separate items that have to be
+                         requested and served by the web server. The file favicon.ico produces a status 200 because it's
+                         automatically requested and served by the web server.
+                         In contrast, main.css and main.js lack status codes because the web server has not been
+                         instructed to fetch them. </p>
+
+                    <p>
+                         The scheme specifies the protocol used to access the resource. In this case:
+                         <strong>https://web.engr.oregonstate.edu/~wagnejua/M1/a1-wagnejua/index.html</strong> it is
+                         HTTPS, which is just HTTP with a TLS/SSL wrapper that uses port 443. It indicates that the data
+                         exchanged between the web browser and the web server is encrypted for security.
+                         In this URL, web is the subdomain. Subdomains are used to organize and categorize content
+                         under a main domain. They are typically used for different sections or purposes within a
+                         website.
+                         The subdomain web may also indicate a specific department or area within Oregon State
+                         University's engineering website. The host is the main domain name that identifies the location
+                         of the resource.
+                         In our case, <strong>engr.oregonstate.edu</strong> is the host domain. This part of the URL
+                         identifies the server where the resource is hosted. It points to the specific web server within
+                         Oregon State University's engineering department.
+                         The path specifies the location of the specific resource or file on the web server,
+                         <strong>~wagnejua/M1/a1-wagnejua/index.html</strong> is the path. It's like a directory
+                         structure that guides the server to the exact file requested by the client.
+                         In this case, it leads to a file named index.html.
+                    </p>
+
+               </article>
+
+               <article id="Design">
+
+                    <h3>Frontend Design:</h3>
+
+                    <p>Frontend design, in the context of web development, refers to the process of designing and
+                         creating the user interface and visual presentation of a website
+                         or web application that users interact with. It involves various aspects, including layout,
+                         typography, colors, images, and user experience (UX) design.</p>
+
+                    <dl>
+                         <dt><strong>Effective:</strong></dt>
+                         <dd>This means the system or website helps users achieve their goals accurately. When users
+                              use
+                              it, they should get the correct and expected results.</dd>
+                         <dt><strong>Efficient: </strong></dt>
+                         <dd>The system should allow users to perform tasks with as few steps as
+                              possible.
+                              Users should be able to get the results they want quickly, without unnecessary delays or
+                              actions.</dd>
+                         <dt><strong>Easy to Navigate: </strong></dt>
+                         <dd>Easy to Navigate: This is about making it simple for all users, especially newcomers,
+                              to
+                              find what they're looking for. Users should easily understand how to access their goals,
+                              whether through clicking links or searching, and remember how to do it next time.</dd>
+                         <dt><strong>Error-Free: </strong></dt>
+                         <dd>Error-Free: The system should minimize errors to ensure it's accessible and available
+                              to
+                              all users. This involves learning about common mistakes users might make and preventing
+                              these errors. Users should not encounter obstacles due to their specific needs or
+                              misunderstandings.</dd>
+                         <dt><strong>Enjoyable to Use: </strong></dt>
+                         <dd>Enjoyable to Use: The system should be enjoyable and engaging for users. It should
+                              cater to
+                              the unique preferences and needs of its target audience, both in terms of content and
+                              design. Users should want to return to it because of the positive experiences they have
+                              had, which include the previous four E's and the overall user experience.</dd>
+                    </dl>
+
+                    <p>The <strong>header</strong> tag is used to define the introductory section of a webpage, often
+                         containing logos, navigation menus, and introductory content.</p>
+                    <p>The <strong>footer</strong> tag represents the concluding section of a page, typically housing
+                         copyright notices and contact information.</p>
+                    <p>The <strong>nav</strong> tag identifies a section containing navigation links, aiding users in
+                         exploring the website easily.</p>
+                    <p>The <strong>main</strong> tag signifies the primary content of a page, focusing on the central
+                         topic.</p>
+                    <p>The <strong>section</strong> tag creates distinct sections within a webpage, each with its own
+                         heading, facilitating the organization of content.</p>
+                    <p>The <strong>article</strong> section tag creates distinct sections within a webpage, each with
+                         its own heading, facilitating the organization of content.</p>
+                    <p>The <strong>aside</strong> tag is used for content that is tangentially related to the main
+                         content of a webpage, but can be considered separate from it. This typically includes sidebars,
+                         pull
+                         quotes, advertisements, or supplementary information that complements the primary content.</p>
+                    <p>The <strong>figure</strong> tag is used to encapsulate any content that is referenced from the
+                         main content, such as images, illustrations, diagrams, charts, or videos. It provides a way to
+                         group related content together.</p>
+                    <p>The <strong>blockquote</strong> tag is used to indicate that a block of text within a webpage is
+                         a quotation from another source. It typically includes the quoted text and may be styled to
+                         distinguish it from the surrounding content.</p>
+                    <p>The <strong>div</strong> tag, short for division, is a versatile and commonly used HTML
+                         container element that does not inherently impart any specific semantic meaning.</p>
+
+
+                    <ol>
+                         <li>Anchors link to internal content by using relative URLs within the same website, allowing
+                              users to navigate to other pages or sections on the same site.</li>
+                         <li>Anchors link from page-to-page by defining hyperlinks that connect various pages within a
+                              website, allowing navigation between different sections or topics.</li>
+                    </ol>
+               </article>
+
+               <article id="optimizing-images">
+                    <h3>Optimizing Images</h3>
+
+                    <ol>
+                         <p><strong>Image Dimensions:</strong> The physical dimensions (width and height) of an image on
+                              a web page should match the intended display size. This reduces unnecessary file size and
+                              ensures images fit their containers without resizing by the browser.</p>
+
+                         <p><strong>File Format:</strong> Choosing the right file format is crucial. For photos and
+                              images with complex color gradients, JPEG is preferred due to its lossy compression. For
+                              images with transparency or sharp lines (like logos), PNG is suitable due to lossless
+                              compression. WebP is an emerging format that offers both compression efficiency and
+                              quality.</p>
+
+                         <p><strong>Compression Level:</strong> Balancing image quality and file size, adjusting the
+                              compression level is vital. Higher compression reduces file size, but may degrade image
+                              quality. Finding the right balance is essential.</p>
+
+                         <p><strong>Resolution:</strong> For the web, images are typically displayed at 72 DPI (dots per
+                              inch). A higher DPI is unnecessary and increases file size without visual benefit.</p>
+
+                         <p><strong>Image File Size:</strong> Smaller file sizes result in faster page loading. Compress
+                              images as much as possible without compromising visual quality. Online image compression
+                              tools can help achieve this.</p>
+
+                         <p><strong>Alt Text:</strong> Including descriptive alt text in the HTML image tag is essential
+                              for accessibility. It provides context and information about the image to users who rely
+                              on screen readers or face slow internet connections.</p>
+                    </ol>
+
+               </article>
+
+               <article id="favicons">
+                    <h3>Favicons</h3>
+
+                    <ol>
+                         <p><strong>Website Identification:</strong> Favicons primarily serve as visual identifiers for
+                              websites. Browsers display them in tabs, bookmarks, and favorites, allowing users to
+                              quickly recognize and access their preferred websites.</p>
+
+                         <p><strong>Home Screen Icons:</strong> On mobile devices and some browsers, websites added to
+                              the home screen can use favicons as app icons. This makes it convenient for users to
+                              access web apps as if they were native applications.</p>
+
+                         <p><strong>Tab Switching:</strong> In tabbed interfaces, users can identify and switch between
+                              open tabs by clicking on the tab's favicon. This enhances navigation when multiple tabs
+                              are in use.</p>
+
+                         <p><strong>Notifications:</strong> Favicons may display notifications or badges to indicate
+                              updates or unread content. This visual cue helps users stay informed without switching
+                              tabs.</p>
+
+                         <p><strong>Security Indicators:</strong> Security-conscious browsers use favicons to provide
+                              visual security indicators. For example, a padlock icon may overlay the favicon to signify
+                              a secure, SSL/TLS-protected website, reassuring users about their data's safety.</p>
+
+                         <p><strong>Offline Mode:</strong> In offline or slow-loading scenarios, browsers may use cached
+                              favicons to maintain a consistent visual experience even when website resources are
+                              unavailable or slow to load.</p>
+                    </ol>
+               </article>
+
+               <article id="cascading-stylesheets">
+                    <h3>Cascading Stylesheets</h3>
+                    <p>Stylesheets, also known as CSS, are important for websites and apps because they help in:</p>
+
+                    <ul>
+                         <li>Making things look consistent.</li>
+                         <li>Keeping style separate from content.</li>
+                         <li>Writing less code for styling.</li>
+                         <li>Improving accessibility.</li>
+                         <li>Adapting to different screens.</li>
+                    </ul>
+
+                    <p>There are different ways to use styles in web development:</p>
+
+                    <ul>
+                         <li>**External Stylesheets**: They are useful for consistency.</li>
+                         <li>**Internal Stylesheets**: Good for local styles on one page.</li>
+                         <li>**Inline Styles**: Offer control, but can clutter code.</li>
+                         <li>**Importing Styles**: Allows using styles from other files.</li>
+                         <li>**CSS Frameworks**: Provide pre-designed styles for speed.</li>
+                    </ul>
+               </article>
+               <article id="forms">
+                    <h3>Form Usability and Accessibility</h3>
+                    <p>Forms are essential elements of web usability and accessibility. They serve various purposes,
+                         including capturing user input, processing data, and facilitating user interactions. To ensure
+                         that forms are accessible to all users, there are six major goals of accessible forms:</p>
+                    <ol>
+                         <li>Perceivable: Forms should be easily distinguishable, and users should be able to perceive
+                              all form controls and instructions.</li>
+                         <li>Operable: Forms should be operable through various input methods, including keyboard
+                              navigation.</li>
+                         <li>Understandable: Forms should have clear and concise instructions, and users should
+                              understand how to complete them.</li>
+                         <li>Robust: Forms should be robust and compatible with different user agents and assistive
+                              technologies.</li>
+                         <li>Consistent: Forms should follow consistent design patterns and conventions.</li>
+                         <li>Feedback: Forms should provide appropriate feedback to users after submission or error
+                              occurrences.</li>
+                    </ol>
+                    <p>Ensuring accessibility in forms is crucial to providing an inclusive web experience for all
+                         users.</p>
+                    <!-- Additional content about forms can be added here -->
+               </article>
+
+               <!-- New article about Express -->
+               <article id="express">
+                    <h3>Node, npm, and Express</h3>
+                    <p>Node.js, npm (Node Package Manager), and Express.js are powerful technologies in web development.
+                         They play essential roles in modern web applications:</p>
+                    <ul>
+                         <li><strong>Node.js:</strong> Node.js is a runtime environment that allows developers to run
+                              JavaScript on the server-side. It is known for its non-blocking, event-driven
+                              architecture, making it suitable for building scalable and high-performance web
+                              applications.</li>
+                         <li><strong>npm (Node Package Manager):</strong> npm is the default package manager for
+                              Node.js. It provides a vast ecosystem of packages and libraries that simplify the
+                              development process by offering reusable code and modules.</li>
+                         <li><strong>Express.js:</strong> Express is a popular web application framework for Node.js. It
+                              simplifies the creation of web applications by providing a robust set of features for
+                              routing, middleware, and handling HTTP requests and responses.</li>
+                    </ul>
+                    <p>Together, these technologies enable developers to build efficient, server-side applications and
+                         RESTful APIs, enhancing the web development experience and enabling the creation of dynamic and
+                         responsive web applications.</p>
+                    <!-- Additional content about Node, npm, and Express can be added here -->
+               </article>
+
+
+          </section>
+     </main>
+
+     <footer>
+          <p>&#169; 2023 Juan Wagner</p>
+     </footer>
+
+</body>
+
+</html>

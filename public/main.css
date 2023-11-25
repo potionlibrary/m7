@@ -1,0 +1,588 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */
+/* @import "component1.css";   Component-specific stylesheets, if any.   */
+
+@import url('https://fonts.google.com/specimen/Roboto');
+@import url('https://fonts.google.com/specimen/Karla');
+
+
+/*   ----- Variables  -----  */
+:root {
+  --background-color: #f2f2f2;
+  --text-color: #006400;
+  --heading-color: #222;
+  --link-color: #ad108b;
+  --black-color: #070c4e;
+  --red-color: #ff5733;
+  --orange-color: #ffa500;
+  --soft-white-color: #ebd1de;
+  --purple-color: #6d236d;
+  --pink-color: #ff69b4;
+  --turquoise-color: #5000d1;
+  --orange-red-color: #ff4500;
+  --dark-brown-color: #8b4513;
+  --maroon-color: rgb(26, 24, 20);
+  --light-brown-color: #c28254;
+  --dark-blue-color: #383891;
+  --color-pattern1: rgb(20, 68, 20);
+  --color-pattern2: #6a2170;
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {
+  /* Can alternatively define in html {}. */
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url('images/creambg.jpg');
+  /* Replace with your image path */
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  /* Text-weight font */
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+header {
+  font-family: 'Karla', sans-serif;
+  background-color: var(--maroon-color);
+  height: 100%;
+  padding: 20px;
+  margin: 20px 20px 0px 0px 0px;
+  text-align: center;
+  border-bottom: 2px solid var(--header-border-color);
+}
+
+/* Main Styles */
+main {
+  background-color: var(--maroon-color);
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid var(--main-border-color);
+  /* Use your border color variable */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* Add a subtle shadow for separation */
+}
+
+#web {
+  color: var(--dark-brown-color);
+}
+
+#Design {
+  color: var(--dark-blue-color);
+}
+
+#optimizing-images {
+  color: var(--purple-color);
+}
+
+#favicons {
+  color: var(--light-brown-color);
+}
+
+#cascading-stylesheets {
+  color: var(--link-color)
+}
+
+#forms {
+  color: var(--color-pattern1)
+}
+
+#express {
+  color: var(--color-pattern2)
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.gallery figure {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--figure-bg-color);
+  text-align: center;
+  /* Center the content within the figure */
+}
+
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery figcaption {
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+
+
+
+/* Footer Styles */
+footer {
+  background-color: var(--maroon-color);
+  /* Use your background color variable */
+  padding: 10px;
+  text-align: center;
+  border-top: 2px solid var(--footer-border-color);
+  /* Use your border color variable */
+  color: var(--footer-text-color);
+  /* Use your text color variable */
+}
+
+/* Copyright Statement Styles */
+footer p {
+  margin: 0;
+  /* Remove default margin for cleaner look */
+  font-weight: 800;
+}
+
+/* Ensure text doesn't touch the edges of the article, section, or main block */
+article,
+section,
+main {
+  padding: 20px;
+  /* Add padding to create space between text and edges */
+}
+
+section {}
+
+article {}
+
+#topic1 {}
+
+#topic2 {}
+
+div {}
+
+aside {}
+
+
+/* ----- Anchors ----- Text links */
+a {}
+
+a:link {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+/* Center the navigation links both horizontally and vertically */
+/* Center the navigation links both horizontally and vertically */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  /* Set the background color of the navigation bar to black */
+}
+
+/* Style the navigation links as black boxes */
+nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  /* Adjust the padding to control the size of the boxes */
+  margin: 0 15px;
+  /* Add horizontal margin for spacing */
+  text-decoration: none;
+  color: 1px solid var(--text-color);
+  /* Set the text color to white */
+  background-color: var(--black-color);
+  /* Set the background color of the boxes to black */
+  border: 1px solid var(--text-color);
+  font-weight: 800;
+
+}
+
+/* Style the navigation links on hover */
+nav a:hover {
+  background-color: white;
+  /* Change the background color on hover to white */
+  color: black;
+  /* Change the text color on hover to black */
+}
+
+/*  -----  Typography  ----- */
+p {}
+
+br {}
+
+ol,
+ul,
+dl {}
+
+li {}
+
+dt {}
+
+dd {}
+
+/* Define the heading font for all headings (h1, h2, h3, h4, h5, h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Karla', sans-serif;
+  /* Use your imported heading font */
+  font-weight: 600;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+abbr {}
+
+acronym {}
+
+address {}
+
+blockquote {}
+
+q {}
+
+cite {}
+
+em {}
+
+hr {}
+
+mark {}
+
+s {}
+
+span {}
+
+strong {}
+
+sub {}
+
+sup {}
+
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+
+code {}
+
+kbd {}
+
+samp {}
+
+var {}
+
+del {}
+
+ins {}
+
+/*  ----- Table ----- */
+table {}
+
+caption {}
+
+thead {}
+
+tbody {}
+
+tfoot {}
+
+tr {}
+
+tr:nth-child(even) {}
+
+th {}
+
+td {}
+
+td:nth-child(1) {}
+
+colgroup {}
+
+data {}
+
+datalist {}
+
+/* Style for the table */
+table {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for table cells */
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style for even rows (optional) */
+table tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.status-message {
+  background-color: #f5f5f5;
+  border: 1px solid red;
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 200px; /* Adjust the top value as needed */
+  right: 10px; /* Adjust the right value as needed */
+  width: 300px; /* Set a specific width */
+  height: 100px; /* Set a specific height */
+}
+
+/*  ----- Form ----- */
+/* Form styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* Legend styling */
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Input styling */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Select styling */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Radio button styling */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Add some spacing for the form elements */
+p {
+  margin-bottom: 15px;
+}
+
+/* Add styling for success message */
+#success-message {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+
+
+/* ----- Media ----- */
+/* Style for the figure element */
+figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style for the figcaption element */
+figcaption {
+  padding: 10px;
+  /* Adjust padding as needed */
+  background-color: #f0f0f0;
+  /* Adjust background color as needed */
+  color: #333;
+  /* Adjust text color as needed */
+  font-size: 14px;
+  /* Adjust font size as needed */
+}
+
+/* Style for the image within the figure */
+figure img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  /* Reset margin for the image */
+  padding: 0;
+  /* Reset padding for the image */
+  border: 2px solid #ccc;
+  /* Add a border around the image */
+  background-color: #360909;
+  /* Background color for the image container */
+}
+
+/* Style for individual figure elements within the gallery */
+.gallery figure {
+  display: flex;
+  flex-direction: column; /* Stack the image and caption vertically */
+  align-items: center; /* Center content horizontally */
+  margin: 0 10px 10px;
+  padding: 10px;
+  border: 2px solid #3b0707;
+  background-color: #350505;
+  text-align: center;
+}
+
+
+/* Style for the image within the figure */
+.gallery figure img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 80%;
+}
+
+/* Style for the figcaption */
+.gallery figure figcaption {
+  padding: 10px;
+  color: #333;
+  font-size: 14px;
+  width: 80%; /* Ensure the caption spans the full width */
+}
+
+
+
+
+
+svg {}
+
+picture {}
+
+source {}
+
+iframe {}
+
+video {}
+
+audio {}
+
+embed {}
+
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.gallery {}
+
+.floatright {}
+
+.floatleft {}
+
+.center-middle {}
+
+.ten {}
+
+.twenty {}
+
+.thirty {}
+
+.forty {}
+
+.fifty {}
+
+.sixty {}
+
+.seventy {}
+
+.eighty {}
+
+.radius {}
+
+.circle {}
+
+.boxshadow {}
+
+.tshadow {}
+
+.gradient {}
+
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}

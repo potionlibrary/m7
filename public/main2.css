@@ -1,0 +1,109 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Montserrat:wght@600;700;800&display=swap');
+
+/* Define root variables for colors */
+:root {
+    --background-color: #f2f2f2; /* Background color */
+    --text-color: #333; /* Text color */
+    --heading-color: #222; /* Heading color */
+    --link-color: #007bff; /* Link color */
+    /* Add more variables as needed */
+}
+
+/* Apply fonts and general styles to body */
+body {
+    font-family: 'Open Sans', sans-serif; /* Text-weight font */
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-image: url('your-background-image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Text-weight font */
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-image: url('images/creambg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+/* Header styles */
+header {
+    background-color: var(--background-color);
+    padding: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Main content styles */
+main {
+    background-color: #fff; /* Adjust as needed for readability */
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: var(--background-color);
+    padding: 10px;
+    color: var(--text-color);
+}
+
+/* Headings styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Heading font */
+    color: var(--heading-color);
+}
+
+/* Global navigation styles */
+nav {
+    /* Add styles for global navigation here */
+}
+
+nav a, nav a:hover {
+    text-decoration: none;
+    /* Add styles for navigation links here */
+}
+
+/* Local navigation styles */
+.nav-local {
+    /* Add styles for local navigation here */
+}
+
+.nav-local a, .nav-local a:hover {
+    text-decoration: none;
+    /* Add styles for local navigation links here */
+}
+
+/* Figure and gallery styles */
+figure.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Add styles for figures and gallery items here */
+}
+
+figure.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    /* Add styles for images in the gallery here */
+}
+
+figure.gallery figcaption {
+    text-align: center;
+    margin: 10px;
+    /* Add styles for captions here */
+}

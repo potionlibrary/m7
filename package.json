@@ -1,0 +1,24 @@
+{
+  "name": "class005",
+  "version": "1.0.0",
+  "description": "assignment 5 for my class",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "sample",
+    "web",
+    "application"
+  ],
+  "author": "Juan A Wagner",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1"
+  }
+}

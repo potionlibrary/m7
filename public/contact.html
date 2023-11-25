@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <title>Juan Wagner</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="images/b_knight.png">
+</head>
+
+<body>
+    <header>
+
+        <h1 style="display: inline;">Juan Wagner <img src="images/g_potion.png" alt="green potion" width="50"
+                height="50" style="display: inline;"> </h1>
+
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+   </nav>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Welcome! This online form is designed to help you get in touch with us. Whether you have questions, feedback, or simply want to say hello, you're in the right place. Please fill out the fields below to share your information and thoughts with us. We value your input and look forward to hearing from you. Thank you for reaching out!</p>
+        <form action="/submit" method="POST">
+            <!-- Rest of the form remains the same -->
+        
+            <!-- Example of adding placeholders -->
+            <p><label for="fullName">Full Name
+                <input type="text" name="fullName" id="fullName" size="30" maxlength="100" required placeholder="Enter your full name" autofocus />
+            </label></p>
+        
+            <p><label for="userEmail">Email Address
+                <input type="email" name="userEmail" id="userEmail" size="30" maxlength="100" required placeholder="you@example.com" autofocus/>
+            </label></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Experience</legend>
+                <label for="howHeard">How did you hear about us?</label>
+                <select name="howHeard" id="howHeard">
+                    <option value="SocialMedia">LinkedIn</option>
+                    <option value="WordOfMouth">FaceBook</option>
+                    <option value="OnlineSearch">Wizard 101 forums</option>
+                    <option value="OtherSocial">Myspace</option>
+                    <option value="Other" selected>Other</option>
+                </select>
+
+                <p>Please tell us how we did
+                    <label for="good">
+                        <input type="radio" name="visitAgain" id="good" value="good">
+                        Good</label>
+                    <label for="bad">
+                        <input type="radio" name="visitAgain" id="bad" value="bad">
+                        Bad</label>
+                    <label for="meh">
+                        <input type="radio" name="visitAgain" id="meh" value="meh">
+                        I don't know</label>
+                </p>
+
+                <p><label for="feedbackComments">Additional Comments</label>
+                    <textarea name="feedbackComments" id="feedbackComments" minlength="3" maxlength="250" required autofocus
+                        placeholder="Share your thoughts here."></textarea>
+                </p>
+
+                <p><label for="subscribeNews">
+                        <input type="checkbox" name="subscribeNews" id="subscribeNews" checked required />Subscribe to our
+                        newsletter.</label>
+                </p>
+
+                <button type="submit">Submit Feedback</button>
+            </fieldset>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&#169; 2023 Juan Wagner</p>
+    </footer>
+
+</body>
+
+</html>
